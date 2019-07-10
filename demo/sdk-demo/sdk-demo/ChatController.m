@@ -27,12 +27,10 @@
     huggySdk.delegate = self;
     
     [huggySdk prepare];
-    
+    [huggySdk start];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    [huggySdk start];
-    
     self.navigationItem.title = @"Huggy Support";
 }
 
