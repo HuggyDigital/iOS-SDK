@@ -22,8 +22,9 @@
 
 @property(nonatomic, assign) id delegate;
 @property(strong, nonatomic) UIWebView *webView;
+@property(strong, nonatomic) NSString *sdkId;
 
-- (id) initWith:(UIWebView *)web;
+- (id) initWith:(NSString*)sdkId : (UIWebView *)web;
 - (void) prepare;
 - (void) start;
 - (void) stop;

@@ -13,9 +13,9 @@
 		F78EF1DE22947ACC00CD5EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78EF1DD22947ACC00CD5EB3 /* Assets.xcassets */; };
 		F78EF1E122947ACC00CD5EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78EF1DF22947ACC00CD5EB3 /* LaunchScreen.storyboard */; };
 		F78EF1E422947ACC00CD5EB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F78EF1E322947ACC00CD5EB3 /* main.m */; };
+		F7C0CB3C22D62DD20046D802 /* libHuggySdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C0CB3B22D62DD20046D802 /* libHuggySdk.a */; };
 		F7EEE6CD2295CE74004D3CDF /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EEE6CC2295CE74004D3CDF /* ChatController.m */; };
 		F7EEE6DD2295E43E004D3CDF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEE6DC2295E43E004D3CDF /* WebKit.framework */; };
-		F7F7A95A22B17F7400499388 /* HuggySdk.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F7A95822B17F7400499388 /* HuggySdk.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,10 @@
 		F78EF1E022947ACC00CD5EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78EF1E222947ACC00CD5EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F78EF1E322947ACC00CD5EB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7C0CB3B22D62DD20046D802 /* libHuggySdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHuggySdk.a; path = libs/libHuggySdk.a; sourceTree = "<group>"; };
 		F7EEE6CB2295CE47004D3CDF /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
 		F7EEE6CC2295CE74004D3CDF /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
-		F7EEE6D12295D11C004D3CDF /* libHuggySdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHuggySdk.a; path = libs/libHuggySdk.a; sourceTree = "<group>"; };
 		F7EEE6DC2295E43E004D3CDF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		F7F7A95822B17F7400499388 /* HuggySdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HuggySdk.m; path = ../../../HuggySdk/HuggySdk/HuggySdk.m; sourceTree = "<group>"; };
-		F7F7A95922B17F7400499388 /* HuggySdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HuggySdk.h; path = ../../../HuggySdk/HuggySdk/HuggySdk.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C0CB3C22D62DD20046D802 /* libHuggySdk.a in Frameworks */,
 				F7EEE6DD2295E43E004D3CDF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,8 +68,6 @@
 		F78EF1D322947ACA00CD5EB3 /* sdk-demo */ = {
 			isa = PBXGroup;
 			children = (
-				F7F7A95922B17F7400499388 /* HuggySdk.h */,
-				F7F7A95822B17F7400499388 /* HuggySdk.m */,
 				F78EF1D422947ACA00CD5EB3 /* AppDelegate.h */,
 				F78EF1D522947ACA00CD5EB3 /* AppDelegate.m */,
 				F78EF1D722947ACA00CD5EB3 /* ViewController.h */,
@@ -89,8 +86,8 @@
 		F7EEE6D02295D11C004D3CDF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7C0CB3B22D62DD20046D802 /* libHuggySdk.a */,
 				F7EEE6DC2295E43E004D3CDF /* WebKit.framework */,
-				F7EEE6D12295D11C004D3CDF /* libHuggySdk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +166,6 @@
 				F78EF1E422947ACC00CD5EB3 /* main.m in Sources */,
 				F78EF1D622947ACA00CD5EB3 /* AppDelegate.m in Sources */,
 				F7EEE6CD2295CE74004D3CDF /* ChatController.m in Sources */,
-				F7F7A95A22B17F7400499388 /* HuggySdk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

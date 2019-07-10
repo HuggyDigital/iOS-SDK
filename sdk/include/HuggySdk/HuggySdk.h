@@ -24,14 +24,12 @@
 @property(strong, nonatomic) UIWebView *webView;
 @property(strong, nonatomic) NSString *sdkId;
 
-- (id)initWith:(NSString *)sdkId
-              :(UIWebView *)web;
-- (void)prepare;
-- (void)start;
-- (void)stop;
-- (void)execJs:(NSString *)code;
-- (void)callApiMethod:(NSString *)methodName
-                     :(NSString *)data;
+- (id) initWith:(NSString*)sdkId : (UIWebView *)web;
+- (void) prepare;
+- (void) start;
+- (void) stop;
+- (void) execJs:(NSString *)code;
+- (void) callApiMethod: (NSString*) methodName : (NSString*)data;
 
 @end
 
