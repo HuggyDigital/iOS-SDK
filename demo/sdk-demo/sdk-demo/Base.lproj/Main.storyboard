@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pb5-bL-SOj">
-                                <rect key="frame" x="37" y="336" width="340" height="115.5"/>
+                                <rect key="frame" x="37" y="336" width="340.00000000000011" height="115.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Pb5-bL-SOj" secondAttribute="height" multiplier="187:64" constant="2.9843749999998863" id="Lir-Qv-tN2"/>
                                 </constraints>
@@ -85,23 +85,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sir-SN-9dk">
-                                <rect key="frame" x="216" y="109" width="71" height="49"/>
-                                <state key="normal" title="openEmail"/>
-                                <connections>
-                                    <action selector="onOpenEmail:" destination="CIJ-qS-IEC" eventType="touchUpInside" id="5sG-67-vXo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AW-gH-9DE">
-                                <rect key="frame" x="313" y="109" width="78" height="49"/>
-                                <state key="normal" title="openPhone"/>
-                                <connections>
-                                    <action selector="onOpenPhone:" destination="CIJ-qS-IEC" eventType="touchUpInside" id="fkD-Xc-ZqC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh1-7z-FSJ">
-                                <rect key="frame" x="20" y="109" width="96" height="49"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5Z-ia-aGI">
+                                <rect key="frame" x="214" y="88" width="180" height="49"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="N4L-7U-HbN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="VQg-5j-b4v"/>
+                                    <constraint firstAttribute="height" constant="49" id="h9R-Kj-rs6"/>
+                                </constraints>
+                                <state key="normal" title="setName"/>
+                                <connections>
+                                    <action selector="onSetName:" destination="CIJ-qS-IEC" eventType="touchUpInside" id="VAN-1M-iUS"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-MK-RFK">
+                                <rect key="frame" x="0.0" y="137" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh1-7z-FSJ">
+                                <rect key="frame" x="20" y="88" width="186" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="BuV-44-cgv"/>
+                                    <constraint firstAttribute="width" constant="186" id="Kqz-nH-ohB"/>
                                     <constraint firstAttribute="height" constant="49" id="aej-u5-6Lh"/>
                                 </constraints>
                                 <state key="normal" title="sendMessage"/>
@@ -109,35 +113,18 @@
                                     <action selector="onSendMessage:" destination="CIJ-qS-IEC" eventType="touchUpInside" id="Jkx-vn-b8P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5Z-ia-aGI">
-                                <rect key="frame" x="129" y="109" width="62" height="49"/>
-                                <state key="normal" title="setName"/>
-                                <connections>
-                                    <action selector="onSetName:" destination="CIJ-qS-IEC" eventType="touchUpInside" id="VAN-1M-iUS"/>
-                                </connections>
-                            </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-MK-RFK">
-                                <rect key="frame" x="0.0" y="166" width="414" height="696"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="top" secondItem="v5Z-ia-aGI" secondAttribute="top" id="9ZZ-72-gpx"/>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="top" secondItem="sir-SN-9dk" secondAttribute="top" id="JLU-AB-ZLl"/>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="top" secondItem="95T-BS-xOo" secondAttribute="bottom" constant="21" id="NdS-EE-646"/>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="baseline" secondItem="v5Z-ia-aGI" secondAttribute="firstBaseline" id="QIK-4w-zFs"/>
+                            <constraint firstItem="kyj-MK-RFK" firstAttribute="top" secondItem="Jh1-7z-FSJ" secondAttribute="bottom" id="1gi-D1-gZK"/>
+                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="leading" secondItem="kU4-L2-eph" secondAttribute="leadingMargin" id="5qj-XB-j6x"/>
+                            <constraint firstItem="v5Z-ia-aGI" firstAttribute="trailing" secondItem="kU4-L2-eph" secondAttribute="trailingMargin" id="7FN-ad-mjn"/>
+                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="top" secondItem="95T-BS-xOo" secondAttribute="bottom" id="NdS-EE-646"/>
                             <constraint firstAttribute="trailing" secondItem="kyj-MK-RFK" secondAttribute="trailing" id="QYY-0C-CR5"/>
-                            <constraint firstItem="sir-SN-9dk" firstAttribute="leading" secondItem="v5Z-ia-aGI" secondAttribute="trailing" constant="25" id="VEi-gQ-yXP"/>
-                            <constraint firstItem="v5Z-ia-aGI" firstAttribute="leading" secondItem="Jh1-7z-FSJ" secondAttribute="trailing" constant="13" id="X0o-7d-GzQ"/>
-                            <constraint firstItem="8AW-gH-9DE" firstAttribute="firstBaseline" secondItem="sir-SN-9dk" secondAttribute="baseline" id="Ycl-Hr-msd"/>
-                            <constraint firstItem="kyj-MK-RFK" firstAttribute="top" secondItem="8AW-gH-9DE" secondAttribute="bottom" constant="8" symbolic="YES" id="b9Q-oZ-H2k"/>
+                            <constraint firstItem="v5Z-ia-aGI" firstAttribute="leading" secondItem="Jh1-7z-FSJ" secondAttribute="trailing" constant="8" symbolic="YES" id="TKm-zs-zK1"/>
                             <constraint firstItem="kyj-MK-RFK" firstAttribute="leading" secondItem="kU4-L2-eph" secondAttribute="leading" id="dJ9-vr-VSd"/>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="baseline" secondItem="sir-SN-9dk" secondAttribute="firstBaseline" id="hTJ-8u-TX2"/>
-                            <constraint firstItem="vAO-Pc-dlI" firstAttribute="trailing" secondItem="8AW-gH-9DE" secondAttribute="trailing" constant="23" id="iUO-o7-4Tv"/>
-                            <constraint firstItem="Jh1-7z-FSJ" firstAttribute="leading" secondItem="kU4-L2-eph" secondAttribute="leadingMargin" id="qYH-35-bvc"/>
-                            <constraint firstItem="8AW-gH-9DE" firstAttribute="top" secondItem="sir-SN-9dk" secondAttribute="top" id="s24-60-lZ1"/>
-                            <constraint firstItem="8AW-gH-9DE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sir-SN-9dk" secondAttribute="trailing" constant="8" symbolic="YES" id="xKh-Ub-NQF"/>
+                            <constraint firstItem="v5Z-ia-aGI" firstAttribute="top" secondItem="Jh1-7z-FSJ" secondAttribute="top" id="mug-Z5-OKB"/>
+                            <constraint firstItem="v5Z-ia-aGI" firstAttribute="firstBaseline" secondItem="Jh1-7z-FSJ" secondAttribute="baseline" id="sbZ-Bi-5YL"/>
                             <constraint firstItem="kyj-MK-RFK" firstAttribute="bottom" secondItem="dBz-gH-VHy" secondAttribute="top" id="xXU-Gh-icK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vAO-Pc-dlI"/>

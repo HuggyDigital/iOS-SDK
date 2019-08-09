@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    huggySdk = [[HuggySdk alloc] initWith:@"e15e394a-3314-467e-a049-99cd76210ae3" :_HuggyView];
+    huggySdk = [[HuggySdk alloc] initWith:@"40b1c6b7-c591-4e1a-a3c3-0560f41b1a51" :_HuggyView];
     huggySdk.delegate = self;
     
     [huggySdk prepare];
@@ -55,15 +55,4 @@
     NSLog(@"setName");
     [huggySdk callApiMethod:@"setName" :@"\"Huggy Client\""];
 }
-
-- (IBAction)onOpenEmail:(id)sender {
-    NSLog(@"openEmail");
-    [huggySdk callApiMethod:@"openEmail" :@""];
-}
-
-- (IBAction)onOpenPhone:(id)sender {
-    NSLog(@"openPhone");
-    [huggySdk callApiMethod:@"openPhone" :@""];
-}
-
 @end
