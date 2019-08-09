@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB4D4FC22FDE61C00FB45DA /* libHuggySdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C0CB3B22D62DD20046D802 /* libHuggySdk.a */; };
 		F78EF1D622947ACA00CD5EB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F78EF1D522947ACA00CD5EB3 /* AppDelegate.m */; };
 		F78EF1D922947ACA00CD5EB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78EF1D822947ACA00CD5EB3 /* ViewController.m */; };
 		F78EF1DC22947ACA00CD5EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78EF1DA22947ACA00CD5EB3 /* Main.storyboard */; };
 		F78EF1DE22947ACC00CD5EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78EF1DD22947ACC00CD5EB3 /* Assets.xcassets */; };
 		F78EF1E122947ACC00CD5EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78EF1DF22947ACC00CD5EB3 /* LaunchScreen.storyboard */; };
 		F78EF1E422947ACC00CD5EB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F78EF1E322947ACC00CD5EB3 /* main.m */; };
-		F7C0CB3C22D62DD20046D802 /* libHuggySdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C0CB3B22D62DD20046D802 /* libHuggySdk.a */; };
 		F7EEE6CD2295CE74004D3CDF /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EEE6CC2295CE74004D3CDF /* ChatController.m */; };
 		F7EEE6DD2295E43E004D3CDF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EEE6DC2295E43E004D3CDF /* WebKit.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C0CB3C22D62DD20046D802 /* libHuggySdk.a in Frameworks */,
+				1FB4D4FC22FDE61C00FB45DA /* libHuggySdk.a in Frameworks */,
 				F7EEE6DD2295E43E004D3CDF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DY23K64KD;
 				HEADER_SEARCH_PATHS = "$SOURCE_ROOT/include/**";
 				INFOPLIST_FILE = "sdk-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,7 +320,7 @@
 					"$(PROJECT_DIR)/libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "huggy.sdk-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = io.huggy.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DY23K64KD;
 				HEADER_SEARCH_PATHS = "$SOURCE_ROOT/include/**";
 				INFOPLIST_FILE = "sdk-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,7 +343,7 @@
 					"$(PROJECT_DIR)/libs",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "huggy.sdk-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = io.huggy.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
